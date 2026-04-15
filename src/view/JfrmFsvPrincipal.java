@@ -138,12 +138,12 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
 
     private void jMnuFsvCadastrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvCadastrosActionPerformed
         // TODO add your handling code here:
-        JDlgFsvUsuarios jDlgFsvUsuarios = new JDlgFsvUsuarios(null, true);
-        jDlgFsvUsuarios.setVisible(true);
     }//GEN-LAST:event_jMnuFsvCadastrosActionPerformed
 
     private void jMnuFsvUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvUsuariosActionPerformed
-        // TODO add your handling code here:
+        JDlgFsvUsuarios jDlgFsvUsuarios = new JDlgFsvUsuarios(null, true);
+        jDlgFsvUsuarios.setVisible(true);
+// TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvUsuariosActionPerformed
 
     /**
