@@ -57,6 +57,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuFsvUsuarios.setMnemonic('u');
         jMnuFsvUsuarios.setText("Usuarios");
+        jMnuFsvUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvUsuariosActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvUsuarios);
 
         jMnuFsvClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -121,11 +126,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 741, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 270, Short.MAX_VALUE)
+            .addGap(0, 453, Short.MAX_VALUE)
         );
 
         pack();
@@ -136,6 +141,10 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         JDlgFsvUsuarios jDlgFsvUsuarios = new JDlgFsvUsuarios(null, true);
         jDlgFsvUsuarios.setVisible(true);
     }//GEN-LAST:event_jMnuFsvCadastrosActionPerformed
+
+    private void jMnuFsvUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvUsuariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
