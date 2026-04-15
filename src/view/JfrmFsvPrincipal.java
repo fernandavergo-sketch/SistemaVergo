@@ -29,78 +29,91 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMnuCadastros = new javax.swing.JMenu();
-        jMnuUsuarios = new javax.swing.JMenuItem();
-        jMnuClientes = new javax.swing.JMenuItem();
-        jMnuFornecedor = new javax.swing.JMenuItem();
-        jMnuProdutos = new javax.swing.JMenuItem();
-        jMnuVendedor = new javax.swing.JMenuItem();
-        jMnuMovimentos = new javax.swing.JMenu();
-        jMnuVenda = new javax.swing.JMenuItem();
-        jMnuVendaProduto = new javax.swing.JMenuItem();
-        jMnuCompra = new javax.swing.JMenuItem();
-        jMnuCompraProduto = new javax.swing.JMenuItem();
+        jMnuFsvCadastros = new javax.swing.JMenu();
+        jMnuFsvUsuarios = new javax.swing.JMenuItem();
+        jMnuFsvClientes = new javax.swing.JMenuItem();
+        jMnuFsvFornecedor = new javax.swing.JMenuItem();
+        jMnuFsvProdutos = new javax.swing.JMenuItem();
+        jMnuFsvVendedor = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMnuFsvSair = new javax.swing.JMenuItem();
+        jMnuFsvMovimentos = new javax.swing.JMenu();
+        jMnuFsvVenda = new javax.swing.JMenuItem();
+        jMnuFsvVendaProduto = new javax.swing.JMenuItem();
+        jMnuFsvCompra = new javax.swing.JMenuItem();
+        jMnuFsvCompraProduto = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMnuCadastros.setMnemonic('p');
-        jMnuCadastros.setText("Fsv_Cadastros");
-        jMnuCadastros.addActionListener(new java.awt.event.ActionListener() {
+        jMnuFsvCadastros.setMnemonic('p');
+        jMnuFsvCadastros.setText("Cadastros");
+        jMnuFsvCadastros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMnuCadastrosActionPerformed(evt);
+                jMnuFsvCadastrosActionPerformed(evt);
             }
         });
 
-        jMnuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuUsuarios.setMnemonic('u');
-        jMnuUsuarios.setText("Fsv_Usuarios");
-        jMnuCadastros.add(jMnuUsuarios);
+        jMnuFsvUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuFsvUsuarios.setMnemonic('u');
+        jMnuFsvUsuarios.setText("Usuarios");
+        jMnuFsvCadastros.add(jMnuFsvUsuarios);
 
-        jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuClientes.setMnemonic('c');
-        jMnuClientes.setText("Fsv_Clientes");
-        jMnuCadastros.add(jMnuClientes);
+        jMnuFsvClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
+        jMnuFsvClientes.setMnemonic('c');
+        jMnuFsvClientes.setText("Clientes");
+        jMnuFsvCadastros.add(jMnuFsvClientes);
 
-        jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuFornecedor.setMnemonic('f');
-        jMnuFornecedor.setText("Fsv_Fornecedor");
-        jMnuCadastros.add(jMnuFornecedor);
+        jMnuFsvFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvFornecedor.setMnemonic('f');
+        jMnuFsvFornecedor.setText("Fornecedor");
+        jMnuFsvCadastros.add(jMnuFsvFornecedor);
 
-        jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuProdutos.setText("Fsv_Produtos");
-        jMnuCadastros.add(jMnuProdutos);
+        jMnuFsvProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
+        jMnuFsvProdutos.setMnemonic('p');
+        jMnuFsvProdutos.setText("Produtos");
+        jMnuFsvCadastros.add(jMnuFsvProdutos);
 
-        jMnuVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuVendedor.setMnemonic('v');
-        jMnuVendedor.setText("Fsv_Vendedor");
-        jMnuCadastros.add(jMnuVendedor);
+        jMnuFsvVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvVendedor.setMnemonic('v');
+        jMnuFsvVendedor.setText("Vendedor");
+        jMnuFsvCadastros.add(jMnuFsvVendedor);
+        jMnuFsvCadastros.add(jSeparator1);
 
-        jMenuBar1.add(jMnuCadastros);
+        jMnuFsvSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
+        jMnuFsvSair.setMnemonic('s');
+        jMnuFsvSair.setText("Sair");
+        jMnuFsvCadastros.add(jMnuFsvSair);
 
-        jMnuMovimentos.setMnemonic('m');
-        jMnuMovimentos.setText("Fsv_Movimentos");
+        jMenuBar1.add(jMnuFsvCadastros);
 
-        jMnuVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuVenda.setMnemonic('v');
-        jMnuVenda.setText("Fsv_Venda");
-        jMnuMovimentos.add(jMnuVenda);
+        jMnuFsvMovimentos.setMnemonic('m');
+        jMnuFsvMovimentos.setText("Movimentos");
 
-        jMnuVendaProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuVendaProduto.setMnemonic('v');
-        jMnuVendaProduto.setText("Fsv_Venda_Produto");
-        jMnuMovimentos.add(jMnuVendaProduto);
+        jMnuFsvVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvVenda.setMnemonic('v');
+        jMnuFsvVenda.setText("Venda");
+        jMnuFsvMovimentos.add(jMnuFsvVenda);
 
-        jMnuCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuCompra.setMnemonic('c');
-        jMnuCompra.setText("Fsv_Compra");
-        jMnuMovimentos.add(jMnuCompra);
+        jMnuFsvVendaProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvVendaProduto.setMnemonic('v');
+        jMnuFsvVendaProduto.setText("Venda_Produto");
+        jMnuFsvMovimentos.add(jMnuFsvVendaProduto);
 
-        jMnuCompraProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuCompraProduto.setMnemonic('c');
-        jMnuCompraProduto.setText("Fsv_Compra_Produto");
-        jMnuMovimentos.add(jMnuCompraProduto);
+        jMnuFsvCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvCompra.setMnemonic('c');
+        jMnuFsvCompra.setText("Compra");
+        jMnuFsvMovimentos.add(jMnuFsvCompra);
 
-        jMenuBar1.add(jMnuMovimentos);
+        jMnuFsvCompraProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvCompraProduto.setMnemonic('c');
+        jMnuFsvCompraProduto.setText("Compra_Produto");
+        jMnuFsvMovimentos.add(jMnuFsvCompraProduto);
+
+        jMenuBar1.add(jMnuFsvMovimentos);
 
         setJMenuBar(jMenuBar1);
 
@@ -118,11 +131,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMnuCadastrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuCadastrosActionPerformed
+    private void jMnuFsvCadastrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvCadastrosActionPerformed
         // TODO add your handling code here:
         JDlgFsvUsuarios jDlgFsvUsuarios = new JDlgFsvUsuarios(null, true);
         jDlgFsvUsuarios.setVisible(true);
-    }//GEN-LAST:event_jMnuCadastrosActionPerformed
+    }//GEN-LAST:event_jMnuFsvCadastrosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,16 +174,18 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenu jMnuCadastros;
-    private javax.swing.JMenuItem jMnuClientes;
-    private javax.swing.JMenuItem jMnuCompra;
-    private javax.swing.JMenuItem jMnuCompraProduto;
-    private javax.swing.JMenuItem jMnuFornecedor;
-    private javax.swing.JMenu jMnuMovimentos;
-    private javax.swing.JMenuItem jMnuProdutos;
-    private javax.swing.JMenuItem jMnuUsuarios;
-    private javax.swing.JMenuItem jMnuVenda;
-    private javax.swing.JMenuItem jMnuVendaProduto;
-    private javax.swing.JMenuItem jMnuVendedor;
+    private javax.swing.JMenu jMnuFsvCadastros;
+    private javax.swing.JMenuItem jMnuFsvClientes;
+    private javax.swing.JMenuItem jMnuFsvCompra;
+    private javax.swing.JMenuItem jMnuFsvCompraProduto;
+    private javax.swing.JMenuItem jMnuFsvFornecedor;
+    private javax.swing.JMenu jMnuFsvMovimentos;
+    private javax.swing.JMenuItem jMnuFsvProdutos;
+    private javax.swing.JMenuItem jMnuFsvSair;
+    private javax.swing.JMenuItem jMnuFsvUsuarios;
+    private javax.swing.JMenuItem jMnuFsvVenda;
+    private javax.swing.JMenuItem jMnuFsvVendaProduto;
+    private javax.swing.JMenuItem jMnuFsvVendedor;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
