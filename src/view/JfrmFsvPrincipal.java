@@ -45,7 +45,7 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMnuFsvCadastros.setMnemonic('p');
+        jMnuFsvCadastros.setMnemonic('c');
         jMnuFsvCadastros.setText("Cadastros");
         jMnuFsvCadastros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,6 +68,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuFsvClientes.setMnemonic('c');
         jMnuFsvClientes.setText("Clientes");
+        jMnuFsvClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvClientesActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvClientes);
 
         jMnuFsvFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -126,11 +131,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 741, Short.MAX_VALUE)
+            .addGap(0, 964, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 453, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
         );
 
         pack();
@@ -145,6 +150,12 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jDlgFsvUsuarios.setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvUsuariosActionPerformed
+
+    private void jMnuFsvClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvClientesActionPerformed
+        JDlgFsvClientes jDlgFsvClientes = new JDlgFsvClientes(null, true);
+        jDlgFsvClientes.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvClientesActionPerformed
 
     /**
      * @param args the command line arguments

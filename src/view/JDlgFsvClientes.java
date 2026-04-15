@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author vergo
@@ -16,6 +18,58 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
     public JDlgFsvClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Clientes");
+        setLocationRelativeTo(null);
+        desabilitar();
+    }
+    
+    public void habilitar(){
+        jBtnFsvCancelar.setEnabled(true);
+        jBtnFsvConfirmar.setEnabled(true);
+        jTxtFsvNome.setEditable(true);
+        jTxtFsvApelido.setEditable(true);
+        jTxtFsvAtendente.setEditable(true);
+        jTxtFsvIndicacao.setEditable(true);
+        jTxtFsvEmail.setEditable(true);
+        jTxtFsvBairro.setEditable(true);
+        jTxtFsvCodigo.setEditable(true);
+        jTxtCidade.setEnabled(true);
+        jCboFsvGenero.setEditable(true);
+        jCboFsvPrimeiraCompra.setEditable(true);
+        jFmtFsvTelefone.setEditable(true);
+        jFmtFsvCEP.setEditable(true);
+        jFmtFsvCPF.setEditable(true);
+        jFmtFsvDataCadastro.setEditable(true);
+        jFmtFsvDataNascimento.setEditable(true);
+        jBtnFsvAlterar.setEnabled(false);
+        jBtnFsvExcluir.setEnabled(false);
+        jBtnFsvIncluir.setEnabled(false);
+        jBtnFsvPesquisar.setEnabled(false);
+        
+    }
+    
+    public void desabilitar(){
+        jBtnFsvCancelar.setEnabled(false);
+        jBtnFsvConfirmar.setEnabled(false);
+        jTxtFsvNome.setEditable(false);
+        jTxtFsvApelido.setEditable(false);
+        jTxtFsvAtendente.setEditable(false);
+        jTxtFsvIndicacao.setEditable(false);
+        jTxtFsvEmail.setEditable(false);
+        jTxtFsvBairro.setEditable(false);
+        jTxtFsvCodigo.setEditable(false);
+        jTxtCidade.setEnabled(false);
+        jCboFsvGenero.setEditable(false);
+        jCboFsvPrimeiraCompra.setEditable(false);
+        jFmtFsvTelefone.setEditable(false);
+        jFmtFsvCEP.setEditable(false);
+        jFmtFsvCPF.setEditable(false);
+        jFmtFsvDataCadastro.setEditable(false);
+        jFmtFsvDataNascimento.setEditable(false);
+        jBtnFsvAlterar.setEnabled(true);
+        jBtnFsvExcluir.setEnabled(true);
+        jBtnFsvIncluir.setEnabled(true);
+        jBtnFsvPesquisar.setEnabled(true);
     }
 
     /**
@@ -57,6 +111,12 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
         jFmtFsvDataCadastro = new javax.swing.JFormattedTextField();
         jLabel15 = new javax.swing.JLabel();
         jTxtFsvAtendente = new javax.swing.JTextField();
+        jBtnFsvIncluir = new javax.swing.JButton();
+        jBtnFsvAlterar = new javax.swing.JButton();
+        jBtnFsvExcluir = new javax.swing.JButton();
+        jBtnFsvConfirmar = new javax.swing.JButton();
+        jBtnFsvCancelar = new javax.swing.JButton();
+        jBtnFsvPesquisar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -106,6 +166,54 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
 
         jLabel15.setText("Atendente");
 
+        jBtnFsvIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnFsvIncluir.setText("Incluir");
+        jBtnFsvIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvIncluirActionPerformed(evt);
+            }
+        });
+
+        jBtnFsvAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnFsvAlterar.setText("Alterar");
+        jBtnFsvAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvAlterarActionPerformed(evt);
+            }
+        });
+
+        jBtnFsvExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
+        jBtnFsvExcluir.setText("Excluir");
+        jBtnFsvExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvExcluirActionPerformed(evt);
+            }
+        });
+
+        jBtnFsvConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnFsvConfirmar.setText("Confirmar");
+        jBtnFsvConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvConfirmarActionPerformed(evt);
+            }
+        });
+
+        jBtnFsvCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnFsvCancelar.setText("Cancelar");
+        jBtnFsvCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvCancelarActionPerformed(evt);
+            }
+        });
+
+        jBtnFsvPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnFsvPesquisar.setText("Pesquisar");
+        jBtnFsvPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvPesquisarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -131,15 +239,6 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jFmtFsvTelefone)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 6, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jLabel9))
-                                        .addGap(450, 450, 450))
-                                    .addComponent(jTxtCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel11)
@@ -154,8 +253,23 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                                             .addComponent(jLabel15)
                                             .addComponent(jLabel12))
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jTxtFsvAtendente))))
-                        .addGap(18, 18, 18)))
+                                    .addComponent(jTxtFsvAtendente)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jBtnFsvIncluir)
+                                .addGap(46, 46, 46)
+                                .addComponent(jBtnFsvAlterar)
+                                .addGap(47, 47, 47)
+                                .addComponent(jBtnFsvExcluir)
+                                .addGap(34, 34, 34)
+                                .addComponent(jBtnFsvConfirmar)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jTxtCidade))
+                        .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,7 +282,7 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                                 .addComponent(jTxtFsvEmail)
                                 .addComponent(jLabel8)
                                 .addComponent(jTxtFsvApelido))
-                            .addComponent(jTxtFsvBairro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE))
+                            .addComponent(jTxtFsvBairro, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(61, 61, 61))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jCboFsvPrimeiraCompra, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -176,8 +290,13 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10)
-                            .addComponent(jLabel13))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLabel13)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(jBtnFsvCancelar)
+                                .addGap(46, 46, 46)
+                                .addComponent(jBtnFsvPesquisar)))
+                        .addContainerGap(123, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,7 +359,15 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jFmtFsvDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtFsvAtendente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnFsvIncluir)
+                    .addComponent(jBtnFsvAlterar)
+                    .addComponent(jBtnFsvExcluir)
+                    .addComponent(jBtnFsvConfirmar)
+                    .addComponent(jBtnFsvCancelar)
+                    .addComponent(jBtnFsvPesquisar))
+                .addGap(30, 30, 30))
         );
 
         pack();
@@ -253,6 +380,36 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
     private void jTxtFsvApelidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtFsvApelidoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtFsvApelidoActionPerformed
+
+    private void jBtnFsvExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvExcluirActionPerformed
+        JOptionPane.showConfirmDialog(null, "Confirmar a Exclusão?", "Selecione", JOptionPane.YES_NO_OPTION);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvExcluirActionPerformed
+
+    private void jBtnFsvAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvAlterarActionPerformed
+        habilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvAlterarActionPerformed
+
+    private void jBtnFsvCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvCancelarActionPerformed
+        desabilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvCancelarActionPerformed
+
+    private void jBtnFsvPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvPesquisarActionPerformed
+        JOptionPane.showConfirmDialog(null, "Entre com o Código do Cliente");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvPesquisarActionPerformed
+
+    private void jBtnFsvIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvIncluirActionPerformed
+        habilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvIncluirActionPerformed
+
+    private void jBtnFsvConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvConfirmarActionPerformed
+        desabilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,6 +454,12 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBtnFsvAlterar;
+    private javax.swing.JButton jBtnFsvCancelar;
+    private javax.swing.JButton jBtnFsvConfirmar;
+    private javax.swing.JButton jBtnFsvExcluir;
+    private javax.swing.JButton jBtnFsvIncluir;
+    private javax.swing.JButton jBtnFsvPesquisar;
     private javax.swing.JComboBox<String> jCboFsvGenero;
     private javax.swing.JComboBox<String> jCboFsvPrimeiraCompra;
     private javax.swing.JFormattedTextField jFmtFsvCEP;
