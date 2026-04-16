@@ -26,13 +26,13 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
         
         jBtnFsvCancelar.setEnabled(true);
         jBtnFsvConfirmar.setEnabled(true);
-        jTxtCodigo.setEditable(true);
-        jCboNivel.setEnabled(true);
-        jTxtNome.setEnabled(true);
-        jTxtApelido.setEnabled(true);
-        jFmtCPF.setEditable(true);
-        jFmtDataNascimento.setEditable(true);
-        jPwfSenha.setEnabled(true);
+        jTxtFsvCodigo.setEnabled(true);
+        jCboFsvNivel.setEnabled(true);
+        jTxtFsvNome.setEnabled(true);
+        jTxtFsvApelido.setEnabled(true);
+        jFmtFsvCPF.setEnabled(true);
+        jFmtFsvDataNascimento.setEnabled(true);
+        jPwfFsvSenha.setEnabled(true);
         jChFsvAtivo.setEnabled(true);
         jBtnFsvAlterar.setEnabled(false);
         jBtnFsvIncluir.setEnabled(false);
@@ -44,13 +44,13 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
     public void desabilitar(){
         jBtnFsvCancelar.setEnabled(false);
         jBtnFsvConfirmar.setEnabled(false);
-        jTxtCodigo.setEditable(false);
-        jCboNivel.setEnabled(false);
-        jTxtNome.setEnabled(false);
-        jTxtApelido.setEnabled(false);
-        jFmtCPF.setEditable(false);
-        jFmtDataNascimento.setEditable(false);
-        jPwfSenha.setEnabled(false);
+        jTxtFsvCodigo.setEnabled(false);
+        jCboFsvNivel.setEnabled(false);
+        jTxtFsvNome.setEnabled(false);
+        jTxtFsvApelido.setEnabled(false);
+        jFmtFsvCPF.setEnabled(false);
+        jFmtFsvDataNascimento.setEnabled(false);
+        jPwfFsvSenha.setEnabled(false);
         jChFsvAtivo.setEnabled(false);
         jBtnFsvAlterar.setEnabled(true);
         jBtnFsvIncluir.setEnabled(true);
@@ -67,9 +67,9 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTxtCodigo = new javax.swing.JTextField();
+        jTxtFsvCodigo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTxtNome = new javax.swing.JTextField();
+        jTxtFsvNome = new javax.swing.JTextField();
         jBtnFsvIncluir = new javax.swing.JButton();
         jBtnFsvAlterar = new javax.swing.JButton();
         jBtnFsvExcluir = new javax.swing.JButton();
@@ -77,15 +77,15 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
         jBtnFsvCancelar = new javax.swing.JButton();
         jBtnFsvPesquisar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jTxtApelido = new javax.swing.JTextField();
+        jTxtFsvApelido = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jFmtCPF = new javax.swing.JFormattedTextField();
+        jFmtFsvCPF = new javax.swing.JFormattedTextField();
         jLabel5 = new javax.swing.JLabel();
-        jFmtDataNascimento = new javax.swing.JFormattedTextField();
+        jFmtFsvDataNascimento = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jCboNivel = new javax.swing.JComboBox<>();
+        jCboFsvNivel = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        jPwfSenha = new javax.swing.JPasswordField();
+        jPwfFsvSenha = new javax.swing.JPasswordField();
         jChFsvAtivo = new javax.swing.JCheckBox();
         jMenuBar1 = new javax.swing.JMenuBar();
 
@@ -156,11 +156,11 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
 
         jLabel6.setText("Nível");
 
-        jCboNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboFsvNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel7.setText("Senha");
 
-        jPwfSenha.setText("jPasswordField1");
+        jPwfFsvSenha.setText("jPasswordField1");
 
         jChFsvAtivo.setText("Ativo");
         setJMenuBar(jMenuBar1);
@@ -178,20 +178,20 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTxtCodigo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
-                            .addComponent(jTxtApelido, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jFmtDataNascimento, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jTxtFsvCodigo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+                            .addComponent(jTxtFsvApelido, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jFmtFsvDataNascimento, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
                             .addComponent(jLabel2)
-                            .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtFsvNome, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)
-                            .addComponent(jFmtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jCboNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jFmtFsvCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCboFsvNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPwfSenha)
+                            .addComponent(jPwfFsvSenha)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(jBtnFsvIncluir, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -220,31 +220,31 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtFsvCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtFsvNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFmtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtFsvApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtFsvCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFmtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCboNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtFsvDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCboFsvNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jPwfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPwfFsvSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jChFsvAtivo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -342,10 +342,10 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
     private javax.swing.JButton jBtnFsvExcluir;
     private javax.swing.JButton jBtnFsvIncluir;
     private javax.swing.JButton jBtnFsvPesquisar;
-    private javax.swing.JComboBox<String> jCboNivel;
+    private javax.swing.JComboBox<String> jCboFsvNivel;
     private javax.swing.JCheckBox jChFsvAtivo;
-    private javax.swing.JFormattedTextField jFmtCPF;
-    private javax.swing.JFormattedTextField jFmtDataNascimento;
+    private javax.swing.JFormattedTextField jFmtFsvCPF;
+    private javax.swing.JFormattedTextField jFmtFsvDataNascimento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -354,10 +354,10 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPasswordField jPwfSenha;
-    private javax.swing.JTextField jTxtApelido;
-    private javax.swing.JTextField jTxtCodigo;
-    private javax.swing.JTextField jTxtNome;
+    private javax.swing.JPasswordField jPwfFsvSenha;
+    private javax.swing.JTextField jTxtFsvApelido;
+    private javax.swing.JTextField jTxtFsvCodigo;
+    private javax.swing.JTextField jTxtFsvNome;
     // End of variables declaration//GEN-END:variables
 
 }

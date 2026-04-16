@@ -26,21 +26,21 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
     public void habilitar(){
         jBtnFsvCancelar.setEnabled(true);
         jBtnFsvConfirmar.setEnabled(true);
-        jTxtFsvNome.setEditable(true);
-        jTxtFsvApelido.setEditable(true);
-        jTxtFsvAtendente.setEditable(true);
-        jTxtFsvIndicacao.setEditable(true);
-        jTxtFsvEmail.setEditable(true);
-        jTxtFsvBairro.setEditable(true);
-        jTxtFsvCodigo.setEditable(true);
+        jTxtFsvNome.setEnabled(true);
+        jTxtFsvApelido.setEnabled(true);
+        jTxtFsvAtendente.setEnabled(true);
+        jTxtFsvIndicacao.setEnabled(true);
+        jTxtFsvEmail.setEnabled(true);
+        jTxtFsvBairro.setEnabled(true);
+        jTxtFsvCodigo.setEnabled(true);
         jTxtCidade.setEnabled(true);
-        jCboFsvGenero.setEditable(true);
-        jCboFsvPrimeiraCompra.setEditable(true);
-        jFmtFsvTelefone.setEditable(true);
-        jFmtFsvCEP.setEditable(true);
-        jFmtFsvCPF.setEditable(true);
-        jFmtFsvDataCadastro.setEditable(true);
-        jFmtFsvDataNascimento.setEditable(true);
+        jCboFsvGenero.setEnabled(true);
+        jCboFsvPrimeiraCompra.setEnabled(true);
+        jFmtFsvTelefone.setEnabled(true);
+        jFmtFsvCEP.setEnabled(true);
+        jFmtFsvCPF.setEnabled(true);
+        jFmtFsvDataCadastro.setEnabled(true);
+        jFmtFsvDataNascimento.setEnabled(true);
         jBtnFsvAlterar.setEnabled(false);
         jBtnFsvExcluir.setEnabled(false);
         jBtnFsvIncluir.setEnabled(false);
@@ -51,21 +51,21 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
     public void desabilitar(){
         jBtnFsvCancelar.setEnabled(false);
         jBtnFsvConfirmar.setEnabled(false);
-        jTxtFsvNome.setEditable(false);
-        jTxtFsvApelido.setEditable(false);
-        jTxtFsvAtendente.setEditable(false);
-        jTxtFsvIndicacao.setEditable(false);
-        jTxtFsvEmail.setEditable(false);
-        jTxtFsvBairro.setEditable(false);
-        jTxtFsvCodigo.setEditable(false);
+        jTxtFsvNome.setEnabled(false);
+        jTxtFsvApelido.setEnabled(false);
+        jTxtFsvAtendente.setEnabled(false);
+        jTxtFsvIndicacao.setEnabled(false);
+        jTxtFsvEmail.setEnabled(false);
+        jTxtFsvBairro.setEnabled(false);
+        jTxtFsvCodigo.setEnabled(false);
         jTxtCidade.setEnabled(false);
-        jCboFsvGenero.setEditable(false);
-        jCboFsvPrimeiraCompra.setEditable(false);
-        jFmtFsvTelefone.setEditable(false);
-        jFmtFsvCEP.setEditable(false);
-        jFmtFsvCPF.setEditable(false);
-        jFmtFsvDataCadastro.setEditable(false);
-        jFmtFsvDataNascimento.setEditable(false);
+        jCboFsvGenero.setEnabled(false);
+        jCboFsvPrimeiraCompra.setEnabled(false);
+        jFmtFsvTelefone.setEnabled(false);
+        jFmtFsvCEP.setEnabled(false);
+        jFmtFsvCPF.setEnabled(false);
+        jFmtFsvDataCadastro.setEnabled(false);
+        jFmtFsvDataNascimento.setEnabled(false);
         jBtnFsvAlterar.setEnabled(true);
         jBtnFsvExcluir.setEnabled(true);
         jBtnFsvIncluir.setEnabled(true);
@@ -273,22 +273,6 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel5)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel2)
-                                .addComponent(jTxtFsvNome, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
-                                .addComponent(jFmtFsvDataNascimento)
-                                .addComponent(jTxtFsvEmail)
-                                .addComponent(jLabel8)
-                                .addComponent(jTxtFsvApelido))
-                            .addComponent(jTxtFsvBairro, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(61, 61, 61))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jCboFsvPrimeiraCompra, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10)
                             .addComponent(jLabel13)
                             .addGroup(layout.createSequentialGroup()
@@ -296,7 +280,23 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                                 .addComponent(jBtnFsvCancelar)
                                 .addGap(46, 46, 46)
                                 .addComponent(jBtnFsvPesquisar)))
-                        .addContainerGap(123, Short.MAX_VALUE))))
+                        .addContainerGap(123, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jCboFsvPrimeiraCompra, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jTxtFsvNome, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
+                                    .addComponent(jFmtFsvDataNascimento)
+                                    .addComponent(jTxtFsvEmail)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jTxtFsvApelido))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jTxtFsvBairro))
+                        .addGap(61, 61, 61))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -338,9 +338,9 @@ public class JDlgFsvClientes extends javax.swing.JDialog {
                     .addComponent(jLabel10)
                     .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtFsvBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTxtFsvBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)

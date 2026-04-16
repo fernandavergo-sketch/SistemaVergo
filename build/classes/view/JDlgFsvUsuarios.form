@@ -37,23 +37,23 @@
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtCodigo" alignment="0" pref="286" max="32767" attributes="0"/>
-                          <Component id="jTxtApelido" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jFmtDataNascimento" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTxtFsvCodigo" alignment="0" pref="286" max="32767" attributes="0"/>
+                          <Component id="jTxtFsvApelido" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jFmtFsvDataNascimento" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtNome" min="-2" pref="351" max="-2" attributes="0"/>
+                          <Component id="jTxtFsvNome" min="-2" pref="351" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtCPF" alignment="0" min="-2" pref="351" max="-2" attributes="0"/>
-                          <Component id="jCboNivel" min="-2" pref="351" max="-2" attributes="0"/>
+                          <Component id="jFmtFsvCPF" alignment="0" min="-2" pref="351" max="-2" attributes="0"/>
+                          <Component id="jCboFsvNivel" min="-2" pref="351" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jPwfSenha" max="32767" attributes="0"/>
+                          <Component id="jPwfFsvSenha" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jBtnFsvIncluir" min="-2" pref="107" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -92,8 +92,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtFsvCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtFsvNome" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -102,8 +102,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtApelido" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFmtCPF" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jTxtFsvApelido" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtFsvCPF" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -112,8 +112,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jFmtDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCboNivel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtFsvDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboFsvNivel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -121,7 +121,7 @@
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jPwfSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPwfFsvSenha" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jChFsvAtivo" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="82" max="32767" attributes="0"/>
@@ -151,14 +151,14 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtCodigo">
+    <Component class="javax.swing.JTextField" name="jTxtFsvCodigo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nome"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtNome">
+    <Component class="javax.swing.JTextField" name="jTxtFsvNome">
     </Component>
     <Component class="javax.swing.JButton" name="jBtnFsvIncluir">
       <Properties>
@@ -236,28 +236,28 @@
         <Property name="text" type="java.lang.String" value="Apelido"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtApelido">
+    <Component class="javax.swing.JTextField" name="jTxtFsvApelido">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="text" type="java.lang.String" value="CPF"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtCPF">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtFsvCPF">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtDataNascimento">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtFsvDataNascimento">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="N&#xed;vel"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jCboNivel">
+    <Component class="javax.swing.JComboBox" name="jCboFsvNivel">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -277,7 +277,7 @@
         <Property name="text" type="java.lang.String" value="Senha"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JPasswordField" name="jPwfSenha">
+    <Component class="javax.swing.JPasswordField" name="jPwfFsvSenha">
       <Properties>
         <Property name="text" type="java.lang.String" value="jPasswordField1"/>
       </Properties>
