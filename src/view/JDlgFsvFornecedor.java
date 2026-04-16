@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author vergo
@@ -16,6 +18,57 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
     public JDlgFsvFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Fornecedor");
+        setLocationRelativeTo(null);
+        desabilitar();
+    }
+    
+    public void habilitar(){
+        jBtnFsvConfirmar.setEnabled(true);
+        jBtnFsvCancelar.setEnabled(true);
+        jTxtFsvCodigo.setEnabled(true);
+        jTxtFsvNome.setEnabled(true);
+        jTxtFsvRepresentante.setEnabled(true);
+        jTxtFsvTipo.setEnabled(true);
+        jTxtFsvEmail.setEnabled(true);
+        jTxtFsvEndereco.setEnabled(true);
+        jTxtFsvCidade.setEnabled(true);
+        jTxtFsvBairro.setEnabled(true);
+        jFmtFsvCEP.setEnabled(true);
+        jFmtFsvCNPJ.setEnabled(true);
+        jFmtFsvSite.setEnabled(true);
+        jFmtFsvTelefone.setEnabled(true);
+        jFmtFsvWhatsapp.setEnabled(true);
+        jCboFsvEstado.setEnabled(true);
+        jChFsvAtivo.setEnabled(true);
+        jBtnFsvAlterar.setEnabled(false);
+        jBtnFsvIncluir.setEnabled(false);
+        jBtnFsvPesquisar.setEnabled(false);
+        jBtnFsvExcluir.setEnabled(false);
+    }
+    
+    public void desabilitar(){
+        jBtnFsvConfirmar.setEnabled(false);
+        jBtnFsvCancelar.setEnabled(false);
+        jTxtFsvCodigo.setEnabled(false);
+        jTxtFsvNome.setEnabled(false);
+        jTxtFsvRepresentante.setEnabled(false);
+        jTxtFsvTipo.setEnabled(false);
+        jTxtFsvEmail.setEnabled(false);
+        jTxtFsvEndereco.setEnabled(false);
+        jTxtFsvCidade.setEnabled(false);
+        jTxtFsvBairro.setEnabled(false);
+        jFmtFsvCEP.setEnabled(false);
+        jFmtFsvCNPJ.setEnabled(false);
+        jFmtFsvSite.setEnabled(false);
+        jFmtFsvTelefone.setEnabled(false);
+        jFmtFsvWhatsapp.setEnabled(false);
+        jCboFsvEstado.setEnabled(false);
+        jChFsvAtivo.setEnabled(false);
+        jBtnFsvAlterar.setEnabled(true);
+        jBtnFsvIncluir.setEnabled(true);
+        jBtnFsvPesquisar.setEnabled(true);
+        jBtnFsvExcluir.setEnabled(true);
     }
 
     /**
@@ -58,7 +111,7 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
         jChFsvAtivo = new javax.swing.JCheckBox();
         jBtnFsvIncluir = new javax.swing.JButton();
         jBtnFsvAlterar = new javax.swing.JButton();
-        jBtn = new javax.swing.JButton();
+        jBtnFsvExcluir = new javax.swing.JButton();
         jBtnFsvConfirmar = new javax.swing.JButton();
         jBtnFsvCancelar = new javax.swing.JButton();
         jBtnFsvPesquisar = new javax.swing.JButton();
@@ -118,26 +171,56 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
         jBtnFsvIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnFsvIncluir.setMnemonic('i');
         jBtnFsvIncluir.setText("Incluir");
+        jBtnFsvIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvIncluirActionPerformed(evt);
+            }
+        });
 
         jBtnFsvAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnFsvAlterar.setMnemonic('a');
         jBtnFsvAlterar.setText("Alterar");
+        jBtnFsvAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvAlterarActionPerformed(evt);
+            }
+        });
 
-        jBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jBtn.setMnemonic('e');
-        jBtn.setText("Excluir");
+        jBtnFsvExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnFsvExcluir.setMnemonic('e');
+        jBtnFsvExcluir.setText("Excluir");
+        jBtnFsvExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvExcluirActionPerformed(evt);
+            }
+        });
 
         jBtnFsvConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnFsvConfirmar.setMnemonic('c');
         jBtnFsvConfirmar.setText("Confirmar");
+        jBtnFsvConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvConfirmarActionPerformed(evt);
+            }
+        });
 
         jBtnFsvCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnFsvCancelar.setMnemonic('c');
         jBtnFsvCancelar.setText("Cancelar");
+        jBtnFsvCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvCancelarActionPerformed(evt);
+            }
+        });
 
         jBtnFsvPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnFsvPesquisar.setMnemonic('p');
         jBtnFsvPesquisar.setText("Pesquisar");
+        jBtnFsvPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnFsvPesquisarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,7 +234,7 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
                         .addGap(66, 66, 66)
                         .addComponent(jBtnFsvAlterar)
                         .addGap(53, 53, 53)
-                        .addComponent(jBtn))
+                        .addComponent(jBtnFsvExcluir))
                     .addComponent(jLabel14)
                     .addComponent(jLabel10)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -278,7 +361,7 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnFsvIncluir)
                     .addComponent(jBtnFsvAlterar)
-                    .addComponent(jBtn)
+                    .addComponent(jBtnFsvExcluir)
                     .addComponent(jBtnFsvConfirmar)
                     .addComponent(jBtnFsvCancelar)
                     .addComponent(jBtnFsvPesquisar))
@@ -299,6 +382,36 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
     private void jTxtFsvTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtFsvTipoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtFsvTipoActionPerformed
+
+    private void jBtnFsvExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvExcluirActionPerformed
+    JOptionPane.showConfirmDialog(null, "Confirmar a Exclusão?", "Selecione", JOptionPane.YES_NO_OPTION);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvExcluirActionPerformed
+
+    private void jBtnFsvPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvPesquisarActionPerformed
+    JOptionPane.showConfirmDialog(null, "Entre com o Código do Fornecedor");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvPesquisarActionPerformed
+
+    private void jBtnFsvAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvAlterarActionPerformed
+        habilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvAlterarActionPerformed
+
+    private void jBtnFsvIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvIncluirActionPerformed
+        habilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvIncluirActionPerformed
+
+    private void jBtnFsvCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvCancelarActionPerformed
+        desabilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvCancelarActionPerformed
+
+    private void jBtnFsvConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvConfirmarActionPerformed
+        desabilitar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnFsvConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,10 +456,10 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtn;
     private javax.swing.JButton jBtnFsvAlterar;
     private javax.swing.JButton jBtnFsvCancelar;
     private javax.swing.JButton jBtnFsvConfirmar;
+    private javax.swing.JButton jBtnFsvExcluir;
     private javax.swing.JButton jBtnFsvIncluir;
     private javax.swing.JButton jBtnFsvPesquisar;
     private javax.swing.JComboBox<String> jCboFsvEstado;

@@ -78,6 +78,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuFsvFornecedor.setMnemonic('f');
         jMnuFsvFornecedor.setText("Fornecedor");
+        jMnuFsvFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvFornecedorActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvFornecedor);
 
         jMnuFsvProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -156,6 +161,12 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jDlgFsvClientes.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvClientesActionPerformed
+
+    private void jMnuFsvFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvFornecedorActionPerformed
+        JDlgFsvFornecedor jDlgFsvFornecedor = new JDlgFsvFornecedor(null, true);
+        jDlgFsvFornecedor.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
