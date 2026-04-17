@@ -89,6 +89,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuFsvProdutos.setMnemonic('p');
         jMnuFsvProdutos.setText("Produtos");
+        jMnuFsvProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvProdutosActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvProdutos);
 
         jMnuFsvVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -167,6 +172,12 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jDlgFsvFornecedor.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvFornecedorActionPerformed
+
+    private void jMnuFsvProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvProdutosActionPerformed
+        JDlgFsvProdutos jDlgFsvProdutos = new JDlgFsvProdutos(null, true);
+        jDlgFsvProdutos.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvProdutosActionPerformed
 
     /**
      * @param args the command line arguments
