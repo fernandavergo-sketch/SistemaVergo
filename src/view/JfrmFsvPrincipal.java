@@ -111,6 +111,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
         jMnuFsvSair.setMnemonic('s');
         jMnuFsvSair.setText("Sair");
+        jMnuFsvSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvSairActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvSair);
 
         jMenuBar1.add(jMnuFsvCadastros);
@@ -189,6 +194,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jDlgFsvVendedor.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvVendedorActionPerformed
+
+    private void jMnuFsvSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvSairActionPerformed
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvSairActionPerformed
 
     /**
      * @param args the command line arguments
