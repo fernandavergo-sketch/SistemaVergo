@@ -99,6 +99,11 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuFsvVendedor.setMnemonic('v');
         jMnuFsvVendedor.setText("Vendedor");
+        jMnuFsvVendedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvVendedorActionPerformed(evt);
+            }
+        });
         jMnuFsvCadastros.add(jMnuFsvVendedor);
         jMnuFsvCadastros.add(jSeparator1);
 
@@ -178,6 +183,12 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jDlgFsvProdutos.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvProdutosActionPerformed
+
+    private void jMnuFsvVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvVendedorActionPerformed
+        JDlgFsvVendedor jDlgFsvVendedor = new JDlgFsvVendedor(null, true);
+        jDlgFsvVendedor.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvVendedorActionPerformed
 
     /**
      * @param args the command line arguments
