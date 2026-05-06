@@ -282,7 +282,7 @@ public class JDlgFsvProdutos extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnFsvCancelarActionPerformed
 
     private void jBtnFsvPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvPesquisarActionPerformed
-        JOptionPane.showConfirmDialog(null, "Entre com o Código do Produto");
+        JOptionPane.showInputDialog(null, "Entre com o Código do Produto");
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnFsvPesquisarActionPerformed
 

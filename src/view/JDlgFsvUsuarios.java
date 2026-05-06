@@ -274,7 +274,7 @@ public class JDlgFsvUsuarios extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnFsvCancelarActionPerformed
 
     private void jBtnFsvPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvPesquisarActionPerformed
-        JOptionPane.showConfirmDialog(null, "Entre com o Código do Usuário");
+        JOptionPane.showInputDialog(null, "Entre com o Código do Usuário");
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnFsvPesquisarActionPerformed
 

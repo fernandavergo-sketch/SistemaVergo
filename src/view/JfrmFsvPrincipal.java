@@ -8,12 +8,12 @@ package view;
  *
  * @author vergo
  */
-public class JfrmFsvPrincipal extends javax.swing.JFrame {
+public class JFrmFsvPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form JfrmFsvPrincipal
      */
-    public JfrmFsvPrincipal() {
+    public JFrmFsvPrincipal() {
         initComponents();
         setTitle("Sistema de Cosméticos");
         setExtendedState(MAXIMIZED_BOTH);
@@ -28,7 +28,7 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jMnuFsv = new javax.swing.JMenuBar();
         jMnuFsvCadastros = new javax.swing.JMenu();
         jMnuFsvUsuarios = new javax.swing.JMenuItem();
         jMnuFsvClientes = new javax.swing.JMenuItem();
@@ -76,6 +76,7 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvCadastros.add(jMnuFsvClientes);
 
         jMnuFsvFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/grupo.png"))); // NOI18N
         jMnuFsvFornecedor.setMnemonic('f');
         jMnuFsvFornecedor.setText("Fornecedor");
         jMnuFsvFornecedor.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +98,7 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvCadastros.add(jMnuFsvProdutos);
 
         jMnuFsvVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuFsvVendedor.setMnemonic('v');
         jMnuFsvVendedor.setText("Vendedor");
         jMnuFsvVendedor.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +120,7 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         });
         jMnuFsvCadastros.add(jMnuFsvSair);
 
-        jMenuBar1.add(jMnuFsvCadastros);
+        jMnuFsv.add(jMnuFsvCadastros);
 
         jMnuFsvMovimentos.setMnemonic('m');
         jMnuFsvMovimentos.setText("Movimentos");
@@ -143,9 +145,9 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvCompraProduto.setText("Compra_Produto");
         jMnuFsvMovimentos.add(jMnuFsvCompraProduto);
 
-        jMenuBar1.add(jMnuFsvMovimentos);
+        jMnuFsv.add(jMnuFsvMovimentos);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMnuFsv);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -217,26 +219,27 @@ public class JfrmFsvPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JfrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JfrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JfrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JfrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmFsvPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JfrmFsvPrincipal().setVisible(true);
+                new JFrmFsvPrincipal().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMnuFsv;
     private javax.swing.JMenu jMnuFsvCadastros;
     private javax.swing.JMenuItem jMnuFsvClientes;
     private javax.swing.JMenuItem jMnuFsvCompra;

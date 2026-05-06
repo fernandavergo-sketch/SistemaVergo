@@ -389,7 +389,7 @@ public class JDlgFsvFornecedor extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnFsvExcluirActionPerformed
 
     private void jBtnFsvPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFsvPesquisarActionPerformed
-    JOptionPane.showConfirmDialog(null, "Entre com o Código do Fornecedor");
+    JOptionPane.showInputDialog(null, "Entre com o Código do Fornecedor");
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnFsvPesquisarActionPerformed
 
