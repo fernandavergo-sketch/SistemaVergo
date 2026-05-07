@@ -4,7 +4,7 @@
  */
 package dao;
 
-import bean.FsvUsuarios;
+import bean.FsvCompra;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,11 +15,11 @@ import java.util.logging.Logger;
  *
  * @author vergo
  */
-public class DaoFsvUsuarios extends DaoAbstract{
+public class DaoFsvCompra extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-        FsvUsuarios fsvUsuarios = (FsvUsuarios) object;
+        FsvCompra fsvCompra = (FsvCompra) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -29,22 +29,22 @@ public class DaoFsvUsuarios extends DaoAbstract{
             password = "fernanda_vergo";
             Connection cnt;
             cnt = DriverManager.getConnection(url, user, password);
-            String sql = "insert into fsv_usuarios values (?,?,?,?,?,?,?,?)";
+            String sql = "insert into fsv_compra values (?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
-            pst.setInt(1, fsvUsuarios.getFsvIdUsuarios());
-            pst.setString(2,fsvUsuarios.getFsvNome());
-            pst.setString(3,fsvUsuarios.getFsvApelido());
-            pst.setString(4,fsvUsuarios.getFsvCPF());
-            pst.setDate(5, null);
-            pst.setInt(6,fsvUsuarios.getFsvnivel());
-            pst.setString(7,fsvUsuarios.getFsvsenha());
-            pst.setString(8,fsvUsuarios.getFsvativo());
+            pst.setInt(1, fsvCompra.getFsvIdCompra());
+            pst.setInt(2,fsvCompra.getFsvIdFornecedor());
+            pst.setInt(3,fsvCompra.getFsvIdUsuario());
+            pst.setString(4,fsvCompra.getFsvDescricao());
+            pst.setString(5,fsvCompra.getFsvTipo());
+            pst.setDate(6, null);
+            pst.setDouble(7,fsvCompra.getFsvTotal());
+            pst.setDouble(8,fsvCompra.getFsvDesconto());
             pst.executeUpdate();
             
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DaoFsvUsuarios.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DaoFsvCompra.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(DaoFsvUsuarios.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DaoFsvCompra.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
