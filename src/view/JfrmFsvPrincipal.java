@@ -53,7 +53,7 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
         });
 
         jMnuFsvUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuFsvUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuFsvUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Female.png"))); // NOI18N
         jMnuFsvUsuarios.setMnemonic('u');
         jMnuFsvUsuarios.setText("Usuarios");
         jMnuFsvUsuarios.addActionListener(new java.awt.event.ActionListener() {
@@ -97,7 +97,7 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvCadastros.add(jMnuFsvProdutos);
 
         jMnuFsvVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuFsvVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuFsvVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Boss.png"))); // NOI18N
         jMnuFsvVendedor.setMnemonic('v');
         jMnuFsvVendedor.setText("Vendedor");
         jMnuFsvVendedor.addActionListener(new java.awt.event.ActionListener() {
