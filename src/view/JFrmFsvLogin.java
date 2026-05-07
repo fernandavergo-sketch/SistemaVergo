@@ -18,6 +18,7 @@ public class JFrmFsvLogin extends javax.swing.JFrame {
     public JFrmFsvLogin() {
         initComponents();
         setTitle("Login");
+        setLocationRelativeTo(null);
         jPwfFsvSenha.setText("");
     }
 

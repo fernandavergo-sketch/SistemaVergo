@@ -49,12 +49,12 @@ public class DaoFsvCompra_Produto extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        FsvCompra_Produto fsvCompra_Produto = (FsvCompra_Produto) object;
     }
 
     @Override
     public void delete(Object object) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        FsvCompra_Produto fsvCompra_Produto = (FsvCompra_Produto) object;
     }
 
     @Override

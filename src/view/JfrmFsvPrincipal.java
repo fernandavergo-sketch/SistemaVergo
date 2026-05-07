@@ -39,12 +39,11 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
         jMnuFsvSair = new javax.swing.JMenuItem();
         jMnuFsvMovimentos = new javax.swing.JMenu();
         jMnuFsvVenda = new javax.swing.JMenuItem();
-        jMnuFsvVendaProduto = new javax.swing.JMenuItem();
         jMnuFsvCompra = new javax.swing.JMenuItem();
-        jMnuFsvCompraProduto = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMnuFsvCadastros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastro.png"))); // NOI18N
         jMnuFsvCadastros.setMnemonic('c');
         jMnuFsvCadastros.setText("Cadastros");
         jMnuFsvCadastros.addActionListener(new java.awt.event.ActionListener() {
@@ -122,28 +121,26 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
 
         jMnuFsv.add(jMnuFsvCadastros);
 
+        jMnuFsvMovimentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/movimento.png"))); // NOI18N
         jMnuFsvMovimentos.setMnemonic('m');
         jMnuFsvMovimentos.setText("Movimentos");
 
         jMnuFsvVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Shopping cart.png"))); // NOI18N
         jMnuFsvVenda.setMnemonic('v');
         jMnuFsvVenda.setText("Venda");
+        jMnuFsvVenda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFsvVendaActionPerformed(evt);
+            }
+        });
         jMnuFsvMovimentos.add(jMnuFsvVenda);
 
-        jMnuFsvVendaProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuFsvVendaProduto.setMnemonic('v');
-        jMnuFsvVendaProduto.setText("Venda_Produto");
-        jMnuFsvMovimentos.add(jMnuFsvVendaProduto);
-
         jMnuFsvCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFsvCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compra.png"))); // NOI18N
         jMnuFsvCompra.setMnemonic('c');
         jMnuFsvCompra.setText("Compra");
         jMnuFsvMovimentos.add(jMnuFsvCompra);
-
-        jMnuFsvCompraProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuFsvCompraProduto.setMnemonic('c');
-        jMnuFsvCompraProduto.setText("Compra_Produto");
-        jMnuFsvMovimentos.add(jMnuFsvCompraProduto);
 
         jMnuFsv.add(jMnuFsvMovimentos);
 
@@ -157,7 +154,7 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 550, Short.MAX_VALUE)
+            .addGap(0, 547, Short.MAX_VALUE)
         );
 
         pack();
@@ -202,6 +199,10 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuFsvSairActionPerformed
 
+    private void jMnuFsvVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFsvVendaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuFsvVendaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,14 +244,12 @@ public class JFrmFsvPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMnuFsvCadastros;
     private javax.swing.JMenuItem jMnuFsvClientes;
     private javax.swing.JMenuItem jMnuFsvCompra;
-    private javax.swing.JMenuItem jMnuFsvCompraProduto;
     private javax.swing.JMenuItem jMnuFsvFornecedor;
     private javax.swing.JMenu jMnuFsvMovimentos;
     private javax.swing.JMenuItem jMnuFsvProdutos;
     private javax.swing.JMenuItem jMnuFsvSair;
     private javax.swing.JMenuItem jMnuFsvUsuarios;
     private javax.swing.JMenuItem jMnuFsvVenda;
-    private javax.swing.JMenuItem jMnuFsvVendaProduto;
     private javax.swing.JMenuItem jMnuFsvVendedor;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
